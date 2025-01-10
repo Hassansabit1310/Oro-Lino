@@ -39,7 +39,7 @@ export default function ContactUs() {
     >
       <div className="container mx-auto max-w-3xl">
         <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-8 text-red-600 text-center">Contact Us</h2>
-        <p className="text-center text-gray-600 mb-8">We'd love to hear from you. Please fill out the form below and we'll get back to you as soon as possible.</p>
+        <p className="text-center text-gray-600 mb-8">We&apos;d love to hear from you. Please fill out the form below and we&apos;ll get back to you as soon as possible.</p>
         
         <motion.form
           onSubmit={handleSubmit}
