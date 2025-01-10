@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <motion.header
-      className="fixed w-full bg-white bg-opacity-80 text-white py-4 px-4 md:px-8 lg:px-16 z-50"
+      className="fixed w-[85%] lg:w-full bg-white bg-opacity-80 text-white py-4 px-6 md:px-8 lg:px-16 z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
@@ -28,7 +28,7 @@ export default function Header() {
             <li><a href="#contact-us" className="hover:text-red-500 transition-colors">Contact Us</a></li>
           </ul>
         </nav>
-        <button className="md:hidden text-black" onClick={toggleMenu}>
+        <button className="md:hidden text-black " onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
