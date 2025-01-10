@@ -3,7 +3,8 @@
 import { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-
+import Image from 'next/image'
+import brandLogo from '@/assets/images/orolini-logo (1).png'
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -11,15 +12,15 @@ export default function Header() {
 
   return (
     <motion.header
-      className="fixed w-full bg-black bg-opacity-80 text-white py-4 px-4 md:px-8 lg:px-16 z-50"
+      className="fixed w-full bg-white bg-opacity-80 text-white py-4 px-4 md:px-8 lg:px-16 z-50"
       initial={{ y: -100 }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5 }}
     >
       <div className="container mx-auto flex justify-between items-center">
-        <h1 className="text-2xl md:text-3xl font-playfair font-bold">Oro Lino</h1>
+        <Image src={brandLogo} alt="Oro Lino Logo" width={100} height={100}/>
         <nav className="hidden md:block">
-          <ul className="flex space-x-6">
+          <ul className="flex space-x-6 text-black">
             <li><a href="#brand-story" className="hover:text-red-500 transition-colors">Brand Story</a></li>
             <li><a href="#target-audience" className="hover:text-red-500 transition-colors">Target Audience</a></li>
             <li><a href="#market-positioning" className="hover:text-red-500 transition-colors">Market Positioning</a></li>

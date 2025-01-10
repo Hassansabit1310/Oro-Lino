@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
-
+import brandLogo from '@/assets/images/orolini-logo (1).png'
+import brandStory from '@/assets/images/428610304_312387875149319_4323247035863100202_n.jpg'
 export default function BrandStory() {
   return (
     <motion.section
@@ -16,10 +17,7 @@ export default function BrandStory() {
         <div className="grid md:grid-cols-2 gap-8 items-center">
           <div>
             <p className="text-lg mb-4">
-              Oro Lino was born from a passion for luxury and a commitment to sustainability. Founded in 2010, our journey began with a simple idea: to create exquisite products that not only elevate personal style but also respect our planet.
-            </p>
-            <p className="text-lg mb-4">
-              Over the years, we&apos;ve grown from a small boutique to a globally recognized brand, always staying true to our core values of quality, innovation, and environmental responsibility.
+              Oro Lino was born from a passion for luxury and a commitment to sustainability. Founded in 2021, our journey began with a simple idea: to create exquisite products that not only elevate personal style but also respect our planet.
             </p>
             <p className="text-lg">
               Looking to the future, Oro Lino aims to set new standards in sustainable luxury, continuing to inspire and delight our customers while making a positive impact on the world.
@@ -32,9 +30,9 @@ export default function BrandStory() {
             viewport={{ once: true }}
           >
             <Image
-              src="/placeholder.svg?height=400&width=600"
+              src={brandStory}
               alt="Oro Lino Brand Story"
-              width={600}
+              width={400}
               height={400}
               className="rounded-lg shadow-lg"
             />

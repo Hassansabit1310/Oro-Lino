@@ -1,9 +1,12 @@
 import { motion } from 'framer-motion'
 
+import brandLogo from '@/assets/images/orolini-logo (1).png'
+import Image from 'next/image'
+
 export default function Hero() {
   return (
     <motion.section
-      className="relative h-screen flex items-center justify-center bg-black text-white overflow-hidden"
+      className="relative h-screen flex items-center justify-center bg-white text-white overflow-hidden"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 1 }}
@@ -19,22 +22,28 @@ export default function Hero() {
           <source src="/hero-video.mp4" type="video/mp4" />
         </video>
       </div>
-      <div className="relative z-10 text-center px-4">
-        <motion.h1
-          className="text-4xl md:text-6xl lg:text-7xl font-playfair font-bold mb-4"
-          initial={{ y: 50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
+      <div className="flex flex-col items-center relative z-10 text-center px-4">
+    
+        <motion.div
+       
+      transition={{
+          duration: 2,
+          ease: "easeInOut",
+          times: [0, 0.2, 0.5, 0.8, 1],
+          repeat: Infinity,
+          repeatDelay: 1,
+      }}
+        
         >
-          Oro Lino
-        </motion.h1>
+          <Image src={brandLogo} alt="Brand Logo" width={200} height={200}/>
+        </motion.div>
         <motion.p
-          className="text-xl md:text-2xl mb-8"
+          className="text-xs text-black md:text-2xl mb-8"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          Sustainable Luxury for the Modern World
+          Evergreen Fashion with a Touch of Trend
         </motion.p>
         <motion.a
           href="#brand-story"
@@ -49,4 +58,5 @@ export default function Hero() {
     </motion.section>
   )
 }
+
 
