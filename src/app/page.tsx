@@ -16,7 +16,7 @@ import Footer from './components/Footer'
 
 export default function Home() {
   return (
-    <main className="bg-gray-100 text-gray-900">
+    <main className="bg-gray-100 text-gray-900 w-full">
       <Header />
       <Hero />
       <motion.div
