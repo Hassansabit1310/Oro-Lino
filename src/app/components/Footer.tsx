@@ -6,7 +6,7 @@ export default function Footer() {
       <div className="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
         <div>
           <h3 className="text-2xl font-playfair font-bold mb-4">Oro Lino</h3>
-          <p className="mb-4">Sustainable Luxury for the Modern World</p>
+          <p className="mb-4">Evergreen Fashion with a Touch of Trend</p>
           <div className="flex space-x-4">
             <a href="#" className="hover:text-red-500 transition-colors"><Facebook size={24} /></a>
             <a href="#" className="hover:text-red-500 transition-colors"><Instagram size={24} /></a>
@@ -24,9 +24,9 @@ export default function Footer() {
         </div>
         <div>
           <h4 className="text-xl font-bold mb-4">Contact Us</h4>
-          <p className="mb-2">Email: info@orolino.com</p>
-          <p className="mb-2">Phone: +1 (555) 123-4567</p>
-          <p>Address: 123 Luxury Lane, Fashion City, FC 12345</p>
+          <p className="mb-2">Email: info@oro-lino.com</p>
+          <p className="mb-2">Phone: +1 (123) 456-7890</p>
+          <p>Address: 123 Main Street, City, Country</p>
         </div>
       </div>
       <div className="container mx-auto mt-8 pt-8 border-t border-gray-800 text-center">

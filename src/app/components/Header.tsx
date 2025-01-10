@@ -28,23 +28,23 @@ export default function Header() {
             <li><a href="#contact-us" className="hover:text-red-500 transition-colors">Contact Us</a></li>
           </ul>
         </nav>
-        <button className="md:hidden" onClick={toggleMenu}>
+        <button className="md:hidden text-black" onClick={toggleMenu}>
           {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
       </div>
       {isMenuOpen && (
         <motion.nav
-          className="md:hidden mt-4"
+          className="md:hidden mt-4  text-black"
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3 }}
         >
           <ul className="flex flex-col space-y-2">
-            <li><a href="#brand-story" className="block py-2 hover:text-red-500 transition-colors" onClick={toggleMenu}>Brand Story</a></li>
-            <li><a href="#target-audience" className="block py-2 hover:text-red-500 transition-colors" onClick={toggleMenu}>Target Audience</a></li>
-            <li><a href="#market-positioning" className="block py-2 hover:text-red-500 transition-colors" onClick={toggleMenu}>Market Positioning</a></li>
-            <li><a href="#visual-identity" className="block py-2 hover:text-red-500 transition-colors" onClick={toggleMenu}>Visual Identity</a></li>
-            <li><a href="#contact-us" className="block py-2 hover:text-red-500 transition-colors" onClick={toggleMenu}>Contact Us</a></li>
+            <li><a href="#brand-story" className="block py-2  hover:px-4  text-black transition-colors" onClick={toggleMenu}>Brand Story</a></li>
+            <li><a href="#target-audience" className="block py-2 hover:px-4 text-black transition-colors" onClick={toggleMenu}>Target Audience</a></li>
+            <li><a href="#market-positioning" className="block py-2 hover:px-4 text-black transition-colors" onClick={toggleMenu}>Market Positioning</a></li>
+            <li><a href="#visual-identity" className="block py-2 hover:px-4 text-black transition-colors" onClick={toggleMenu}>Visual Identity</a></li>
+            <li><a href="#contact-us" className="block py-2 hover:px-4 text-black transition-colors" onClick={toggleMenu}>Contact Us</a></li>
           </ul>
         </motion.nav>
       )}

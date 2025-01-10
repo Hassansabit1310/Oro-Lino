@@ -87,7 +87,7 @@ export default function ContactUs() {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            <Button type="submit" className="w-full bg-red-600 hover:bg-red-700 text-white">
+            <Button type="submit" className="flex items-center justify-center w-full bg-red-600 hover:bg-red-700 text-white">
               <Send className="mr-2 h-4 w-4" /> Send Message
             </Button>
           </motion.div>

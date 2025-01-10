@@ -38,7 +38,7 @@ export default function Hero() {
           <Image src={brandLogo} alt="Brand Logo" width={200} height={200}/>
         </motion.div>
         <motion.p
-          className="text-xs text-black md:text-2xl mb-8"
+          className="font-bold text-black  mb-8"
           initial={{ y: 50, opacity: 0 }}
           animate={{ y: 0, opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.8 }}
